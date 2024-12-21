@@ -23,7 +23,7 @@ Follow these steps in the specified order to achieve the complete result:
 1. **Navigate to the data preprocessing directory:**
 
    ```bash
-   cd unveiling_code/data_preprocess
+   cd Unveiling-Coding-Regions-in-LLMs/data_preprocess
    ```
 
 2. **Download Dataset for Processing:**
@@ -54,14 +54,20 @@ Follow these steps in the specified order to achieve the complete result:
 
 1. **Navigate to the training directory:**
 
-   You do not need to change directories as the training scripts are executed from the `further_training` folder under `training`.
+   ```bash
+   cd Unveiling-Coding-Regions-in-LLMs/training/further_training
+   ```
 
 2. **Run the Training Script:**
 
    Utilize the preprocessed dataset to calculate importance scores with the following command:
 
    ```bash
-   bash code_train_core-10000.sh "tiny-codes" "llama-3.2" "meta-llama/Llama-3.2-3B-Instruct"
+   bash code_train_core-10000.sh "tiny-codes" "llama-3.2" "meta-llama/Llama-3.2-3B-Instruct" "go"
+   ```
+
+   ```bash
+   bash code_train_core-10000.sh "tiny-codes" "llama-3.2" "meta-llama/Llama-3.2-3B-Instruct" "java"
    ```
 
 ### Step 3: Region Selection
@@ -69,7 +75,7 @@ Follow these steps in the specified order to achieve the complete result:
 1. **Navigate to the region selection directory:**
 
    ```bash
-   cd unveiling_code/region_selection
+   cd Unveiling-Coding-Regions-in-LLMs/region_selection
    ```
 
 2. **Extract Core Linguistic Regions:**
@@ -89,7 +95,7 @@ Follow these steps in the specified order to achieve the complete result:
 1. **Navigate to the damage directory:**
 
    ```bash
-   cd unveiling_code/damage
+   cd Unveiling-Coding-Regions-in-LLMs/damage
    ```
 
 2. **Run the Damage Assessment Script:**
